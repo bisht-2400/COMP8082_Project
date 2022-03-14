@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: rgb(35, 0, 133);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  margin-top: 10px;
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(84, 60, 168);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<button class="collapsible">This is a brief description of the Job. Click on it for details.</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam eu nisl fermentum lobortis in eu leo. Aenean non mollis felis. Duis lobortis, magna at aliquet ultricies, lorem justo venenatis dolor, eget malesuada lectus nunc eu lacus. Maecenas vel lorem tortor. Ut nibh libero, mattis sit amet efficitur in, luctus a tellus. Morbi ut cursus ante, eu fringilla tellus. In in quam tempus, pharetra est at, pretium tortor. Quisque vehicula quam mauris, vel tincidunt diam posuere id. Aliquam erat volutpat. Vestibulum nec sodales ligula. Proin volutpat sapien vitae velit bibendum pulvinar.
+    Nunc et ornare lacus. Donec semper, dolor vel ullamcorper condimentum, urna odio dictum erat, vitae pharetra risus lectus vitae nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer ac ligula non nisl mattis pellentesque. Vivamus molestie leo nec diam efficitur tempus. Curabitur porttitor lorem ut orci congue, in tempor felis fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+    Praesent porttitor sem eu sapien euismod efficitur. Sed aliquet risus id odio feugiat, et laoreet nisi convallis. Nulla sed venenatis elit. Vivamus imperdiet nibh aliquet pulvinar vulputate. Suspendisse sed nibh urna. Praesent egestas sodales sapien, at interdum quam aliquet sit amet. Nunc condimentum justo ut turpis tristique accumsan. Proin non lacus quis sapien tincidunt facilisis in nec est. Donec lectus ante, gravida ut dapibus sodales, blandit in neque.
+    Proin volutpat a nisi sed consequat. Suspendisse potenti. Phasellus faucibus justo erat, eu pulvinar est hendrerit in. Aliquam erat volutpat. Sed eu sollicitudin est. Nullam sodales, nisl eget pharetra tincidunt, lorem quam venenatis velit, non viverra dolor nisi non eros. Proin at imperdiet risus. Integer non libero eget neque commodo viverra. Sed dapibus lorem at dui tristique dignissim. Fusce velit nibh, egestas a tincidunt consequat, viverra at mi. Nam molestie euismod urna id varius.
+    Aliquam erat volutpat. Vivamus non ornare ex. Nullam tempus sagittis arcu, nec rhoncus velit. Donec sodales luctus felis malesuada molestie. Phasellus volutpat, massa ut pulvinar aliquam, leo massa venenatis lectus, sit amet condimentum neque erat eu ipsum. Aenean auctor ex sit amet dolor molestie, eu porttitor urna pharetra. Nam et sem tincidunt, malesuada ligula quis, pulvinar sem. Sed in elementum magna. Vivamus diam leo, rutrum eu lacinia at, egestas vel dui.</p>
+</div>
+<button class="collapsible">This is a brief description of the Job. Click on it for details.</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam eu nisl fermentum lobortis in eu leo. Aenean non mollis felis. Duis lobortis, magna at aliquet ultricies, lorem justo venenatis dolor, eget malesuada lectus nunc eu lacus. Maecenas vel lorem tortor. Ut nibh libero, mattis sit amet efficitur in, luctus a tellus. Morbi ut cursus ante, eu fringilla tellus. In in quam tempus, pharetra est at, pretium tortor. Quisque vehicula quam mauris, vel tincidunt diam posuere id. Aliquam erat volutpat. Vestibulum nec sodales ligula. Proin volutpat sapien vitae velit bibendum pulvinar.
+    Nunc et ornare lacus. Donec semper, dolor vel ullamcorper condimentum, urna odio dictum erat, vitae pharetra risus lectus vitae nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer ac ligula non nisl mattis pellentesque. Vivamus molestie leo nec diam efficitur tempus. Curabitur porttitor lorem ut orci congue, in tempor felis fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+    Praesent porttitor sem eu sapien euismod efficitur. Sed aliquet risus id odio feugiat, et laoreet nisi convallis. Nulla sed venenatis elit. Vivamus imperdiet nibh aliquet pulvinar vulputate. Suspendisse sed nibh urna. Praesent egestas sodales sapien, at interdum quam aliquet sit amet. Nunc condimentum justo ut turpis tristique accumsan. Proin non lacus quis sapien tincidunt facilisis in nec est. Donec lectus ante, gravida ut dapibus sodales, blandit in neque.
+    Proin volutpat a nisi sed consequat. Suspendisse potenti. Phasellus faucibus justo erat, eu pulvinar est hendrerit in. Aliquam erat volutpat. Sed eu sollicitudin est. Nullam sodales, nisl eget pharetra tincidunt, lorem quam venenatis velit, non viverra dolor nisi non eros. Proin at imperdiet risus. Integer non libero eget neque commodo viverra. Sed dapibus lorem at dui tristique dignissim. Fusce velit nibh, egestas a tincidunt consequat, viverra at mi. Nam molestie euismod urna id varius.
+    Aliquam erat volutpat. Vivamus non ornare ex. Nullam tempus sagittis arcu, nec rhoncus velit. Donec sodales luctus felis malesuada molestie. Phasellus volutpat, massa ut pulvinar aliquam, leo massa venenatis lectus, sit amet condimentum neque erat eu ipsum. Aenean auctor ex sit amet dolor molestie, eu porttitor urna pharetra. Nam et sem tincidunt, malesuada ligula quis, pulvinar sem. Sed in elementum magna. Vivamus diam leo, rutrum eu lacinia at, egestas vel dui.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
