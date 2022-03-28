@@ -131,27 +131,27 @@
       btn.className = "collapsible";
       let imgSrc = "images/".concat(listing.employer, ".png")
       btn.innerHTML = "<img src='".concat(imgSrc, "' style = 'height: 48px; width: 48px'>", " ", listing.title);
-      // let div = document.createElement("div");
-      // div.innerHTML = "  <div class=\"content\">\n" +
-      //         "    <h4>Responsibilities</h4>\n" +
-      //         "    <h6>We what seek in a candidate:</h6>\n" +
-      //         "    <ul>\n" +
-      //         "      <li>Strong work ethic - when you say you will deliver something, you will deliver.</li>\n" +
-      //         "      <li>Loves coding - We want people that love what they do.</li>\n" +
-      //         "      <li>When replying, put 'Pineapple' in the subject line, so we know you read this whole posting</li>\n" +
-      //         "      <li>Must be able to work from 8am - 6pm PST</li>\n" +
-      //         "      <li>Must have a web cam to show your face when we do calls</li>\n" +
-      //         "      <li>Must speak fluent English and/or fluent Spanish</li>\n" +
-      //         "    </ul>\n" +
-      //         "    <h4>Requirements</h4>\n" +
-      //         "    <ul>\n" +
-      //         "      <li>React Native - We need 1-2 React Native developers</li>\n" +
-      //         "      <li>React / Node.js - We need 2-3 React / Node.js developers</li>\n" +
-      //         "    </ul>\n" +
-      //         "    <button type=\"button\" class=\"btn btn-outline-primary btn-main\">Apply Here</button>\n" +
-      //         "  </div>"
-      //
-      // document.body.appendChild(div);
+      let div = document.createElement("div");
+      div.innerHTML = "  <div class=\"content\">\n" +
+              "    <h4>Responsibilities</h4>\n" +
+              "    <h6>We what seek in a candidate:</h6>\n" +
+              "    <ul>\n" +
+              "      <li>Strong work ethic - when you say you will deliver something, you will deliver.</li>\n" +
+              "      <li>Loves coding - We want people that love what they do.</li>\n" +
+              "      <li>When replying, put 'Pineapple' in the subject line, so we know you read this whole posting</li>\n" +
+              "      <li>Must be able to work from 8am - 6pm PST</li>\n" +
+              "      <li>Must have a web cam to show your face when we do calls</li>\n" +
+              "      <li>Must speak fluent English and/or fluent Spanish</li>\n" +
+              "    </ul>\n" +
+              "    <h4>Requirements</h4>\n" +
+              "    <ul>\n" +
+              "      <li>React Native - We need 1-2 React Native developers</li>\n" +
+              "      <li>React / Node.js - We need 2-3 React / Node.js developers</li>\n" +
+              "    </ul>\n" +
+              "    <button type=\"button\" class=\"btn btn-outline-primary btn-main\">Apply Here</button>\n" +
+              "  </div>"
+
+      document.body.appendChild(div);
       document.body.appendChild(btn);
       return true;
     }
@@ -192,23 +192,19 @@
       }
       console.log("I'm Done")
     }
-    function getJSONData() {
+    function appendAllJobListings() {
       fetch("./database.json")
               .then(response => {
                 return response.json();
               })
-              .then(jsondata => appendAllJobListings(jsondata.job_listings));
+              .then(jsondata => loopThroughListings(jsondata.job_listings));
     }
-    function appendAllJobListings(data) {
+    function loopThroughListings(data) {
       for (let i = 0; i < data.length; i++) {
         createJobListing(data[i])
       }
     }
-    getJSONData();
-
-
-
-
+    appendAllJobListings();
 
   </script>
 
