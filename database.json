@@ -1,0 +1,43 @@
+{
+    "job_listings": [{
+        "title": "Junior Frontend Developer",
+        "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "employer": "amazon",
+        "salary": 67000,
+        "type": "full_time",
+        "specialization": "javascript"
+    }, {
+        "title": "Full-stack Web Developer",
+        "description": "donec nunc libero, semper vel arcu et, placerat iaculis diam",
+        "employer": "apple",
+        "salary": 70000,
+        "type": "full_time",
+        "specialization": "javascript"
+    }, {
+        "title": "Backend Engineer",
+        "description": "donec nunc libero, semper vel arcu et, placerat iaculis diam",
+        "employer": "twitter",
+        "salary": 70000,
+        "type": "full_time",
+        "specialization": "javascript"
+    }, {
+        "title": "Associate Software Engineer   ",
+        "description": "donec nunc libero, semper vel arcu et, placerat iaculis diam",
+        "employer": "spotify",
+        "salary": 70000,
+        "type": "full_time",
+        "specialization": "javascript"
+    }],
+    "users": [{
+       "email": "aadi@mailinator.com"
+    }, {
+        "email": "warisha@mailinator.com"
+    }, {
+        "email": "manpreet@mailinator.com"
+    }, {
+        "email": "shahzaib@mailinator.com"
+    }, {
+        "email": "dhruv@mailinator.com"
+    }]
+
+}
