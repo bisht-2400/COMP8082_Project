@@ -1,0 +1,145 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    overflow: hidden;
+    background-color: black;
+    background-image: url("images/space.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 0.5% 0%;
+    height: 40%;
+    position: relative;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 5%;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 15%;
+    border-radius: 4%;
+}
+
+.header a.logo {
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.header button {
+    color: #FFAC5F;
+
+
+}
+.header a.active {
+    color: #FFAC5F;
+    /*float: right;*/
+    /*margin-right: 20%;*/
+}
+
+.header a.about {
+    color: #FFAC5F;
+    /*margin-right: 30%;*/
+}
+
+.header-right {
+    float: right;
+}
+
+.btn-group-wrap {
+    margin-top: 75px;
+    text-align: center;
+}
+
+div.btn-group {
+    margin: 0 auto;;
+    text-align: center;
+    width: inherit;
+    display: inline-block;
+}
+
+.btn-outline-primary {
+    color: black !important;
+    border-color: black !important;
+    margin-top: 10px;
+}
+
+.btn-main {
+    background-color: #ff6666 !important;
+}
+.btn:hover {
+    background-color: lightblue !important;
+}
+
+.form-inline {
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+}
+
+.collapsible {
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    margin-top: 10px;
+    margin-left: 170px;
+    margin-right: 100px;
+    width: 78.5%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible:hover {
+    background-color: rgb(84, 60, 168);
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    margin-left: 170px;
+    margin-right: 100px;
+    width: 78.5%;
+}
